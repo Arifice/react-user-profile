@@ -1,17 +1,9 @@
-import { useEffect } from "react";
-import { useState } from "react";
 import User from "../User/User";
 import { useLoaderData } from "react-router-dom";
 
 
 const Users = () => {
-    const users=useLoaderData();
-    // const [users,setUsers]=useState([])
-    // useEffect(()=>{
-    //     fetch('/User.json')
-    //     .then(res=>res.json())
-    //     .then(data=>setUsers(data));
-    // },[])
+    const users=useLoaderData();    
     console.log(users);
     return (
         <div>
