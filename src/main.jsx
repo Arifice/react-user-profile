@@ -17,8 +17,9 @@ import Userdetails from './Components/UserDetails/Userdetails.jsx';
       children:[  
         {
             path:'/user/:userId',  
-            loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),     
-            element: <Userdetails></Userdetails>
+            // loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),     
+            element: <Userdetails></Userdetails>,
+            loader:()=>fetch('https://jsonplaceholder.typicode.com/users'),
         }     
        
       ]
